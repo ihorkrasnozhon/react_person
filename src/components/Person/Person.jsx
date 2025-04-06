@@ -10,7 +10,11 @@ export const Person = ({ person }) => {
       {age !== undefined && <div className="Person__age">Age: {age}</div>}
       {isMarried ? (
         <div className="Person__partner">
-          {partnerName} is my {sex === 'm' ? 'wife' : 'husband'}:
+          {partnerName} is my {
+          sex === 'm'
+            ? 'wife'
+            : 'husband'
+        }
         </div>
       ) : (
         <div className="Person__partner">I am not married</div>
